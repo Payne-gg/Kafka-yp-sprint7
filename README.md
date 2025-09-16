@@ -94,3 +94,17 @@ python consumer.py | tee ~/kafka-demo/logs/consumer.log
 - Для Kafka используется TLS (CA.pem) и SCRAM-SHA-512.
 - Schema Registry хранит метаданные в топике `schemas` (RF=3).
 
+Конфигурация кластера:
+Версия: 3.5
+Реестр схем данных: есть
+Kafka Rest API: есть
+Платформа: Intel Ice Lake, 2 cores 8Gb RAM
+Хранилище: SSD 32 Gb
+Зона доступности: одна, ru-central1-b (чтоб грант за сутки кластер не сожрал)
+Количество брокеров в зоне: 3
+Compression type: LZ4
+Default replication factor: 3
+Log retention ms: 604800000
+Log segment bytes: 1073741824
+Num partitions: 3
+Offsets retention minutes: 3
