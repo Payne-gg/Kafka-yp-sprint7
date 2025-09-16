@@ -1,0 +1,478 @@
+[2025-09-16 13:02:44,833] INFO SchemaRegistryConfig values: 
+	access.control.allow.headers = 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	access.control.skip.options = true
+	authentication.method = NONE
+	authentication.realm = 
+	authentication.roles = [*]
+	authentication.skip.paths = []
+	avro.compatibility.level = 
+	compression.enable = true
+	connector.connection.limit = 0
+	csrf.prevention.enable = false
+	csrf.prevention.token.endpoint = /csrf
+	csrf.prevention.token.expiration.minutes = 30
+	csrf.prevention.token.max.entries = 10000
+	debug = false
+	dos.filter.delay.ms = 100
+	dos.filter.enabled = false
+	dos.filter.insert.headers = true
+	dos.filter.ip.whitelist = []
+	dos.filter.managed.attr = false
+	dos.filter.max.idle.tracker.ms = 30000
+	dos.filter.max.requests.ms = 30000
+	dos.filter.max.requests.per.connection.per.sec = 25
+	dos.filter.max.requests.per.sec = 25
+	dos.filter.max.wait.ms = 50
+	dos.filter.throttle.ms = 30000
+	dos.filter.throttled.requests = 5
+	enable.fips = false
+	host.name = localhost
+	host.port = 8081
+	http2.enabled = true
+	idle.timeout.ms = 30000
+	init.resource.extension.class = []
+	inter.instance.headers.whitelist = []
+	inter.instance.listener.name = 
+	inter.instance.protocol = http
+	kafkagroup.heartbeat.interval.ms = 3000
+	kafkagroup.rebalance.timeout.ms = 300000
+	kafkagroup.session.timeout.ms = 10000
+	kafkastore.bootstrap.servers = [SASL_SSL://rc1b-6v254d3mu3mlhcg5.mdb.yandexcloud.net:9091, SASL_SSL://rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091, SASL_SSL://rc1b-tl2r3tk8eaau7h4d.mdb.yandexcloud.net:9091]
+	kafkastore.checkpoint.dir = /tmp
+	kafkastore.checkpoint.version = 0
+	kafkastore.connection.url = 
+	kafkastore.group.id = 
+	kafkastore.init.timeout.ms = 60000
+	kafkastore.sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	kafkastore.sasl.kerberos.min.time.before.relogin = 60000
+	kafkastore.sasl.kerberos.service.name = 
+	kafkastore.sasl.kerberos.ticket.renew.jitter = 0.05
+	kafkastore.sasl.kerberos.ticket.renew.window.factor = 0.8
+	kafkastore.sasl.mechanism = SCRAM-SHA-512
+	kafkastore.security.protocol = SASL_SSL
+	kafkastore.ssl.cipher.suites = 
+	kafkastore.ssl.enabled.protocols = TLSv1.2,TLSv1.1,TLSv1
+	kafkastore.ssl.endpoint.identification.algorithm = https
+	kafkastore.ssl.key.password = [hidden]
+	kafkastore.ssl.keymanager.algorithm = SunX509
+	kafkastore.ssl.keystore.location = 
+	kafkastore.ssl.keystore.password = [hidden]
+	kafkastore.ssl.keystore.type = JKS
+	kafkastore.ssl.protocol = TLS
+	kafkastore.ssl.provider = 
+	kafkastore.ssl.trustmanager.algorithm = PKIX
+	kafkastore.ssl.truststore.location = /home/bpp/kafka-demo/certs/yandex-truststore.jks
+	kafkastore.ssl.truststore.password = [hidden]
+	kafkastore.ssl.truststore.type = JKS
+	kafkastore.timeout.ms = 2000
+	kafkastore.topic = schemas
+	kafkastore.topic.replication.factor = 3
+	kafkastore.topic.skip.validation = false
+	kafkastore.update.handlers = []
+	kafkastore.write.max.retries = 5
+	leader.connect.timeout.ms = 60000
+	leader.election.delay = false
+	leader.election.sticky = false
+	leader.eligibility = true
+	leader.read.timeout.ms = 60000
+	listener.protocol.map = []
+	listeners = [http://0.0.0.0:8081]
+	master.eligibility = null
+	max.request.header.size = 8192
+	max.response.header.size = 8192
+	metadata.encoder.old.secret = null
+	metadata.encoder.secret = null
+	metadata.encoder.topic = _schema_encoders
+	metric.reporters = []
+	metrics.global.stats.request.tags.enable = false
+	metrics.jmx.prefix = kafka.schema.registry
+	metrics.latency.sla.ms = 50
+	metrics.latency.slo.ms = 5
+	metrics.latency.slo.sla.enable = false
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	metrics.tag.map = []
+	mode.mutability = true
+	network.traffic.rate.limit.backend = guava
+	network.traffic.rate.limit.bytes.per.sec = 20971520
+	network.traffic.rate.limit.enable = false
+	nosniff.prevention.enable = false
+	port = 8081
+	proxy.protocol.enabled = false
+	reject.options.request = false
+	request.logger.name = io.confluent.rest-utils.requests
+	request.queue.capacity = 2147483647
+	request.queue.capacity.growby = 64
+	request.queue.capacity.init = 128
+	resource.extension.class = []
+	resource.extension.classes = []
+	resource.static.locations = []
+	response.http.headers.config = 
+	response.mediatype.default = application/vnd.schemaregistry.v1+json
+	response.mediatype.preferred = [application/vnd.schemaregistry.v1+json, application/vnd.schemaregistry+json, application/json]
+	rest.servlet.initializor.classes = []
+	schema.cache.expiry.secs = 300
+	schema.cache.size = 1000
+	schema.canonicalize.on.consume = []
+	schema.compatibility.level = BACKWARD
+	schema.providers = []
+	schema.registry.group.id = schema-registry-yc
+	schema.registry.inter.instance.protocol = http
+	schema.registry.resource.extension.class = []
+	schema.search.default.limit = 1000
+	schema.search.max.limit = 1000
+	schema.validate.fields = false
+	server.connection.limit = 0
+	shutdown.graceful.ms = 1000
+	sni.check.enabled = false
+	ssl.cipher.suites = []
+	ssl.client.auth = false
+	ssl.client.authentication = NONE
+	ssl.enabled.protocols = []
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = 
+	ssl.keystore.location = 
+	ssl.keystore.password = [hidden]
+	ssl.keystore.reload = false
+	ssl.keystore.type = JKS
+	ssl.keystore.watch.location = 
+	ssl.protocol = TLS
+	ssl.provider = 
+	ssl.trustmanager.algorithm = 
+	ssl.truststore.location = 
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	suppress.stack.trace.response = true
+	thread.pool.max = 200
+	thread.pool.min = 8
+	websocket.path.prefix = /ws
+	websocket.servlet.initializor.classes = []
+ (io.confluent.kafka.schemaregistry.rest.SchemaRegistryConfig:370)
+[2025-09-16 13:02:44,948] INFO Logging initialized @898ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2025-09-16 13:02:45,007] INFO Initial capacity 128, increased by 64, maximum capacity 2147483647. (io.confluent.rest.ApplicationServer:440)
+[2025-09-16 13:02:45,273] INFO RestConfig values: 
+	access.control.allow.headers = 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	access.control.skip.options = true
+	authentication.method = NONE
+	authentication.realm = 
+	authentication.roles = [*]
+	authentication.skip.paths = []
+	compression.enable = true
+	connector.connection.limit = 0
+	csrf.prevention.enable = false
+	csrf.prevention.token.endpoint = /csrf
+	csrf.prevention.token.expiration.minutes = 30
+	csrf.prevention.token.max.entries = 10000
+	debug = false
+	dos.filter.delay.ms = 100
+	dos.filter.enabled = false
+	dos.filter.insert.headers = true
+	dos.filter.ip.whitelist = []
+	dos.filter.managed.attr = false
+	dos.filter.max.idle.tracker.ms = 30000
+	dos.filter.max.requests.ms = 30000
+	dos.filter.max.requests.per.connection.per.sec = 25
+	dos.filter.max.requests.per.sec = 25
+	dos.filter.max.wait.ms = 50
+	dos.filter.throttle.ms = 30000
+	dos.filter.throttled.requests = 5
+	http2.enabled = true
+	idle.timeout.ms = 30000
+	listener.protocol.map = []
+	listeners = []
+	max.request.header.size = 8192
+	max.response.header.size = 8192
+	metric.reporters = []
+	metrics.global.stats.request.tags.enable = false
+	metrics.jmx.prefix = rest-utils
+	metrics.latency.sla.ms = 50
+	metrics.latency.slo.ms = 5
+	metrics.latency.slo.sla.enable = false
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	metrics.tag.map = []
+	network.traffic.rate.limit.backend = guava
+	network.traffic.rate.limit.bytes.per.sec = 20971520
+	network.traffic.rate.limit.enable = false
+	nosniff.prevention.enable = false
+	port = 8080
+	proxy.protocol.enabled = false
+	reject.options.request = false
+	request.logger.name = io.confluent.rest-utils.requests
+	request.queue.capacity = 2147483647
+	request.queue.capacity.growby = 64
+	request.queue.capacity.init = 128
+	resource.extension.classes = []
+	response.http.headers.config = 
+	response.mediatype.default = application/json
+	response.mediatype.preferred = [application/json]
+	rest.servlet.initializor.classes = []
+	server.connection.limit = 0
+	shutdown.graceful.ms = 1000
+	sni.check.enabled = false
+	ssl.cipher.suites = []
+	ssl.client.auth = false
+	ssl.client.authentication = NONE
+	ssl.enabled.protocols = []
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = 
+	ssl.keystore.location = 
+	ssl.keystore.password = [hidden]
+	ssl.keystore.reload = false
+	ssl.keystore.type = JKS
+	ssl.keystore.watch.location = 
+	ssl.protocol = TLS
+	ssl.provider = 
+	ssl.trustmanager.algorithm = 
+	ssl.truststore.location = 
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	suppress.stack.trace.response = true
+	thread.pool.max = 200
+	thread.pool.min = 8
+	websocket.path.prefix = /ws
+	websocket.servlet.initializor.classes = []
+ (io.confluent.rest.RestConfig:370)
+[2025-09-16 13:02:45,274] INFO Adding listener with HTTP/2: NamedURI{uri=http://0.0.0.0:8081, name='null'} (io.confluent.rest.ApplicationServer:307)
+[2025-09-16 13:02:45,620] INFO Found internal listener: NamedURI{uri=http://0.0.0.0:8081, name='null'} (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:190)
+[2025-09-16 13:02:45,621] INFO Setting my identity to version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:193)
+[2025-09-16 13:02:47,274] INFO Registering schema provider for AVRO: io.confluent.kafka.schemaregistry.avro.AvroSchemaProvider (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:271)
+[2025-09-16 13:02:47,275] INFO Registering schema provider for JSON: io.confluent.kafka.schemaregistry.json.JsonSchemaProvider (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:271)
+[2025-09-16 13:02:47,275] INFO Registering schema provider for PROTOBUF: io.confluent.kafka.schemaregistry.protobuf.ProtobufSchemaProvider (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:271)
+[2025-09-16 13:02:47,320] INFO Initializing KafkaStore with broker endpoints: SASL_SSL://rc1b-6v254d3mu3mlhcg5.mdb.yandexcloud.net:9091,SASL_SSL://rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091,SASL_SSL://rc1b-tl2r3tk8eaau7h4d.mdb.yandexcloud.net:9091 (io.confluent.kafka.schemaregistry.storage.KafkaStore:110)
+[2025-09-16 13:02:47,453] WARN No value specified for metadata.encoder.secret, sensitive metadata will not be encoded (io.confluent.kafka.schemaregistry.storage.encoder.MetadataEncoderService:93)
+[2025-09-16 13:02:47,656] INFO Validating schemas topic schemas (io.confluent.kafka.schemaregistry.storage.KafkaStore:245)
+[2025-09-16 13:02:47,789] INFO Kafka store reader thread starting consumer (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:135)
+[2025-09-16 13:02:47,962] INFO Seeking to beginning for all partitions (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:181)
+[2025-09-16 13:02:47,963] INFO Initialized last consumed offset to -1 (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:185)
+[2025-09-16 13:02:47,966] INFO [kafka-store-reader-thread-schemas]: Starting (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:127)
+[2025-09-16 13:02:48,251] INFO Wait to catch up until the offset at 4 (io.confluent.kafka.schemaregistry.storage.KafkaStore:313)
+[2025-09-16 13:02:48,303] INFO Reached offset at 4 (io.confluent.kafka.schemaregistry.storage.KafkaStore:315)
+[2025-09-16 13:02:48,303] INFO Joining schema registry with Kafka-based coordination (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:427)
+[2025-09-16 13:02:48,373] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Discovered group coordinator rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091 (id: 2147483645 rack: null) (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:906)
+[2025-09-16 13:02:48,376] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] (Re-)joining group (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:576)
+[2025-09-16 13:02:48,377] INFO Updating metadata (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:138)
+[2025-09-16 13:02:48,460] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Request joining group due to: need to re-join with the given member-id: sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1072)
+[2025-09-16 13:02:48,461] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException) (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1072)
+[2025-09-16 13:02:48,461] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] (Re-)joining group (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:576)
+[2025-09-16 13:02:48,461] INFO Updating metadata (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:138)
+[2025-09-16 13:02:49,479] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Successfully joined group with generation Generation{generationId=1, memberId='sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c', protocol='v0'} (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:637)
+[2025-09-16 13:02:49,480] INFO Performing assignment (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:180)
+[2025-09-16 13:02:49,487] INFO Member information: {sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c=version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false} (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:189)
+[2025-09-16 13:02:49,489] INFO Assignment: Assignment{version=1, error=0, leader='sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c', leaderIdentity=version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false} (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:252)
+[2025-09-16 13:02:49,537] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Successfully synced group in generation Generation{generationId=1, memberId='sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c', protocol='v0'} (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:812)
+[2025-09-16 13:02:49,541] INFO Finished rebalance with leader election result: Assignment{version=1, error=0, leader='sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c', leaderIdentity=version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false} (io.confluent.kafka.schemaregistry.leaderelector.kafka.KafkaGroupLeaderElector:235)
+[2025-09-16 13:02:49,541] INFO Setting the leader to version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:481)
+[2025-09-16 13:02:49,554] INFO Leader changed from null to version=1,host=localhost,port=8081,scheme=http,leaderEligibility=true,isLeader=false (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:512)
+[2025-09-16 13:02:49,563] INFO Wait to catch up until the offset at 5 (io.confluent.kafka.schemaregistry.storage.KafkaStore:313)
+[2025-09-16 13:02:49,564] INFO Reached offset at 5 (io.confluent.kafka.schemaregistry.storage.KafkaStore:315)
+[2025-09-16 13:02:49,625] INFO Binding SchemaRegistryRestApplication to all listeners. (io.confluent.rest.Application:339)
+[2025-09-16 13:02:49,766] INFO jetty-9.4.54.v20240208; built: 2024-02-08T19:42:39.027Z; git: cef3fbd6d736a21e7d541a5db490381d95a2047d; jvm 17.0.16+8-Ubuntu-0ubuntu124.04.1 (org.eclipse.jetty.server.Server:375)
+[2025-09-16 13:02:49,835] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2025-09-16 13:02:49,836] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2025-09-16 13:02:49,839] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ConfigResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ConfigResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ContextsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ContextsResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SubjectsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SubjectsResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SchemasResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SchemasResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.CompatibilityResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.CompatibilityResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ModeResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ModeResource will be ignored. 
+Sep 16, 2025 1:02:50 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider io.confluent.kafka.schemaregistry.rest.resources.ServerMetadataResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider io.confluent.kafka.schemaregistry.rest.resources.ServerMetadataResource will be ignored. 
+[2025-09-16 13:02:50,660] INFO HV000001: Hibernate Validator 6.1.7.Final (org.hibernate.validator.internal.util.Version:21)
+[2025-09-16 13:02:51,027] INFO Started o.e.j.s.ServletContextHandler@8b91134{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2025-09-16 13:02:51,042] INFO Started o.e.j.s.ServletContextHandler@3bae64d0{/ws,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2025-09-16 13:02:51,064] INFO Started NetworkTrafficServerConnector@a1f72f5{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8081} (org.eclipse.jetty.server.AbstractConnector:333)
+[2025-09-16 13:02:51,066] INFO Started @7019ms (org.eclipse.jetty.server.Server:415)
+[2025-09-16 13:02:51,066] INFO Schema Registry version: 7.6.1 commitId: a023c88eeae3e700e1c2d132c977510df594ad88 (io.confluent.kafka.schemaregistry.rest.SchemaRegistryMain:47)
+[2025-09-16 13:02:51,067] INFO Server started, listening for requests... (io.confluent.kafka.schemaregistry.rest.SchemaRegistryMain:49)
+[2025-09-16 13:03:11,396] INFO Registering new schema: subject app.events-value, version null, id null, type null, schema size 271 (io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource:387)
+[2025-09-16 13:03:11,463] INFO Wait to catch up until the offset at 5 (io.confluent.kafka.schemaregistry.storage.KafkaStore:313)
+[2025-09-16 13:03:11,464] INFO Reached offset at 5 (io.confluent.kafka.schemaregistry.storage.KafkaStore:315)
+[2025-09-16 13:03:11,505] INFO Wait to catch up until the offset at 6 (io.confluent.kafka.schemaregistry.storage.KafkaStore:313)
+[2025-09-16 13:03:11,547] INFO Reached offset at 6 (io.confluent.kafka.schemaregistry.storage.KafkaStore:315)
+[2025-09-16 13:03:11,601] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:03:11 +0000] "POST /subjects/app.events-value/versions HTTP/1.1" 200 8 "-" "curl/8.5.0" 444 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:03:20,583] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:03:20 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 138 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:03:20,605] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:03:20 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 10 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:03:41,843] INFO Registering new schema: subject app.events-value, version null, id null, type null, schema size 269 (io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource:387)
+[2025-09-16 13:03:41,848] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:03:41 +0000] "POST /subjects/app.events-value/versions?normalize=False HTTP/1.1" 200 8 "-" "python-requests/2.32.3" 9 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:03:57,230] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:03:57 +0000] "GET /schemas/ids/1 HTTP/1.1" 200 150 "-" "python-requests/2.32.3" 36 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:04:17,189] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:04:17 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 4 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:04:17,203] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:04:17 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 3 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:04:27,107] ERROR Request Failed with exception  (io.confluent.rest.exceptions.DebuggableExceptionMapper:103)
+javax.ws.rs.NotSupportedException: HTTP 415 Unsupported Media Type
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.getMethodRouter(MethodSelectingRouter.java:421)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.access$000(MethodSelectingRouter.java:73)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter$4.apply(MethodSelectingRouter.java:674)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.apply(MethodSelectingRouter.java:305)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:86)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:69)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:38)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:173)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:247)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:378)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:553)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:494)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:431)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at io.confluent.rest.metrics.JettyRequestMetricsFilter.doFilter(JettyRequestMetricsFilter.java:84)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at io.confluent.kafka.schemaregistry.rest.RequestIdHandler.handle(RequestIdHandler.java:51)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:234)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-09-16 13:04:27,119] INFO 78.128.114.62 - - [16/Sep/2025:13:04:27 +0000] "GET / HTTP/1.1" 415 62 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" 20 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:24:17,017] ERROR Request Failed with exception  (io.confluent.rest.exceptions.DebuggableExceptionMapper:103)
+javax.ws.rs.NotSupportedException: HTTP 415 Unsupported Media Type
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.getMethodRouter(MethodSelectingRouter.java:421)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.access$000(MethodSelectingRouter.java:73)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter$4.apply(MethodSelectingRouter.java:674)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.apply(MethodSelectingRouter.java:305)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:86)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:69)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:38)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:173)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:247)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:378)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:553)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:494)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:431)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at io.confluent.rest.metrics.JettyRequestMetricsFilter.doFilter(JettyRequestMetricsFilter.java:84)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at io.confluent.kafka.schemaregistry.rest.RequestIdHandler.handle(RequestIdHandler.java:51)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:234)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-09-16 13:24:17,022] INFO 78.128.114.62 - - [16/Sep/2025:13:24:17 +0000] "GET / HTTP/1.1" 415 62 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" 7 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:35:35,003] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:35:34 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 135 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:36:52,941] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:36:52 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 13 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:48:04,229] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:48:04 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 11 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:48:04,335] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:48:04 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 9 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:49:47,990] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:49:47 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 46 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:49:54,033] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:49:54 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 9 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:50:16,772] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:50:16 +0000] "GET /subjects HTTP/1.1" 200 20 "-" "curl/8.5.0" 5 (io.confluent.rest-utils.requests:62)
+[2025-09-16 13:50:20,075] INFO [0:0:0:0:0:0:0:1] - - [16/Sep/2025:13:50:20 +0000] "GET /subjects/app.events-value/versions HTTP/1.1" 200 3 "-" "curl/8.5.0" 3 (io.confluent.rest-utils.requests:62)
+[2025-09-16 14:04:03,482] INFO Stopped NetworkTrafficServerConnector@a1f72f5{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8081} (org.eclipse.jetty.server.AbstractConnector:383)
+[2025-09-16 14:04:03,483] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2025-09-16 14:04:03,926] INFO Stopped o.e.j.s.ServletContextHandler@3bae64d0{/ws,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2025-09-16 14:04:03,936] INFO Stopped o.e.j.s.ServletContextHandler@8b91134{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2025-09-16 14:04:03,940] INFO Shutting down schema registry (io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry:1909)
+[2025-09-16 14:04:03,941] INFO [kafka-store-reader-thread-schemas]: Shutting down (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:80)
+[2025-09-16 14:04:03,941] INFO [kafka-store-reader-thread-schemas]: Stopped (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:144)
+[2025-09-16 14:04:03,942] INFO [kafka-store-reader-thread-schemas]: Shutdown completed (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:102)
+[2025-09-16 14:04:04,363] ERROR [Consumer clientId=KafkaStore-reader-schemas, groupId=schema-registry-localhost-8081] Unable to find FetchSessionHandler for node 1. Ignoring fetch response. (org.apache.kafka.clients.consumer.internals.AbstractFetch:128)
+[2025-09-16 14:04:04,363] ERROR [Consumer clientId=KafkaStore-reader-schemas, groupId=schema-registry-localhost-8081] Unable to find FetchSessionHandler for node 1. Ignoring fetch response. (org.apache.kafka.clients.consumer.internals.AbstractFetch:128)
+[2025-09-16 14:04:04,368] INFO KafkaStoreReaderThread shutdown complete. (io.confluent.kafka.schemaregistry.storage.KafkaStoreReaderThread:337)
+[2025-09-16 14:04:04,376] INFO Kafka store producer shut down (io.confluent.kafka.schemaregistry.storage.KafkaStore:423)
+[2025-09-16 14:04:04,378] INFO Kafka store shut down complete (io.confluent.kafka.schemaregistry.storage.KafkaStore:429)
+[2025-09-16 14:04:04,378] INFO Shutting down MetadataEncoderService (io.confluent.kafka.schemaregistry.storage.encoder.MetadataEncoderService:358)
+[2025-09-16 14:04:04,379] INFO Stopping the schema registry group member. (io.confluent.kafka.schemaregistry.leaderelector.kafka.KafkaGroupLeaderElector:296)
+[2025-09-16 14:04:04,380] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Member sr-1-0a8c7226-0892-4cc9-ba83-9238c670742c sending LeaveGroup request to coordinator rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091 (id: 2147483645 rack: null) due to the consumer is being closed (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1133)
+[2025-09-16 14:04:04,381] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Resetting generation and member id due to: consumer pro-actively leaving the group (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1025)
+[2025-09-16 14:04:04,385] INFO [Schema registry clientId=sr-1, groupId=schema-registry-yc] Request joining group due to: consumer pro-actively leaving the group (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1072)
+[2025-09-16 14:04:04,385] WARN [Schema registry clientId=sr-1, groupId=schema-registry-yc] Close timed out with 1 pending requests to coordinator, terminating client connections (io.confluent.kafka.schemaregistry.leaderelector.kafka.SchemaRegistryCoordinator:1110)
+[2025-09-16 14:04:04,389] INFO The schema registry group member has stopped. (io.confluent.kafka.schemaregistry.leaderelector.kafka.KafkaGroupLeaderElector:330)

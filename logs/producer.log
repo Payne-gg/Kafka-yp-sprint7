@@ -1,0 +1,5 @@
+Delivered to app.events[1]@0 key=b'evt-0'
+Delivered to app.events[2]@0 key=b'evt-2'
+Delivered to app.events[1]@1 key=b'evt-4'
+Delivered to app.events[0]@0 key=b'evt-1'
+Delivered to app.events[0]@1 key=b'evt-3'

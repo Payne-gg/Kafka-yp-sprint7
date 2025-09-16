@@ -1,0 +1,13 @@
+venv
+python\venv
+*venv
+schema-registry/bin/*
+schema-registry/etc/*
+schema-registry/plugins/*
+schema-registry/data/*
+schema-registry/lib/*
+schema-registry/libexec/*
+schema-registry/share/*
+schema-registry/src/*
+tools/confluent-7.6.1.tar.gz
+

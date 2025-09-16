@@ -1,0 +1,3 @@
+{
+  "schema": "{\n  \"type\": \"record\",\n  \"name\": \"AppEvent\",\n  \"namespace\": \"com.example.app\",\n  \"fields\": [\n    {\"name\": \"id\", \"type\": \"string\"},\n    {\"name\": \"event_type\", \"type\": \"string\"},\n    {\"name\": \"payload\", \"type\": \"string\"},\n    {\"name\": \"timestamp_ms\", \"type\": \"long\"}\n  ]\n}\n\n"
+}

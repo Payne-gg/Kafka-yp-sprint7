@@ -1,0 +1,5 @@
+Received from app.events[0]@0 key=evt-1 value={'id': 'evt-1', 'event_type': 'test', 'payload': '{"i": 1}', 'timestamp_ms': 1758027821834}
+Received from app.events[0]@1 key=evt-3 value={'id': 'evt-3', 'event_type': 'test', 'payload': '{"i": 3}', 'timestamp_ms': 1758027821836}
+Received from app.events[2]@0 key=evt-2 value={'id': 'evt-2', 'event_type': 'test', 'payload': '{"i": 2}', 'timestamp_ms': 1758027821835}
+Received from app.events[1]@0 key=evt-0 value={'id': 'evt-0', 'event_type': 'test', 'payload': '{"i": 0}', 'timestamp_ms': 1758027821833}
+Received from app.events[1]@1 key=evt-4 value={'id': 'evt-4', 'event_type': 'test', 'payload': '{"i": 4}', 'timestamp_ms': 1758027821837}

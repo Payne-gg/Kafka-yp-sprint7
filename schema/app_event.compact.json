@@ -1,0 +1,1 @@
+{"type":"record","name":"AppEvent","namespace":"com.example.app","fields":[{"name":"id","type":"string"},{"name":"event_type","type":"string"},{"name":"payload","type":"string"},{"name":"timestamp_ms","type":"long"}]}
