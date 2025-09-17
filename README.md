@@ -94,6 +94,61 @@ python consumer.py | tee ~/kafka-demo/logs/consumer.log
 - Для Kafka используется TLS (CA.pem) и SCRAM-SHA-512.
 - Schema Registry хранит метаданные в топике `schemas` (RF=3).
 
+### 7) Интеграция с Apache NiFi (вариант через Docker)
+
+Запуск NiFi 1.23.2 в Docker на порту 8082:
+```bash
+sudo apt-get update -y
+sudo apt-get install -y docker.io || true
+sudo systemctl enable --now docker
+docker pull apache/nifi:1.23.2
+docker run -d --name nifi -p 8082:8080 -e NIFI_WEB_HTTP_PORT=8080 apache/nifi:1.23.2
+```
+
+Копируем truststore (Yandex Cloud CA) внутрь контейнера:
+```bash
+docker cp ~/kafka-demo/certs/yandex-truststore.jks nifi:/opt/nifi/nifi-current/conf/yandex-truststore.jks
+```
+
+Создание SSL Controller Service в NiFi (через UI):
+- Открыть `http://<IP_ВМ>:8082/nifi`
+- Верхнее меню → Config (шестерёнка) → Controller Services → `+` → `StandardSSLContextService`
+- Параметры:
+  - Truststore Filename: `/opt/nifi/nifi-current/conf/yandex-truststore.jks`
+  - Truststore Password: `trustpass`
+  - Truststore Type: `JKS`
+- Включить сервис (Enable)
+
+Добавление процессоров и связь:
+- Добавить `GenerateFlowFile` с настройками:
+  - Custom Text: `Hello from NiFi`
+  - Scheduling: `1 sec`
+- Добавить `PublishKafka_2_6` и настроить свойства:
+  - bootstrap.servers: `rc1b-6v254d3mu3mlhcg5.mdb.yandexcloud.net:9091,rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091,rc1b-tl2r3tk8eaau7h4d.mdb.yandexcloud.net:9091`
+  - topic: `app.events`
+  - acks: `all`
+  - security.protocol: `SASL_SSL`
+  - sasl.mechanism: `SCRAM-SHA-512`
+  - username="user123" password="password123";`
+  - SSL Context Service: `KafkaTruststore`
+- Соединить `GenerateFlowFile` → `PublishKafka_2_6` по `success`
+- Запустить оба процессора
+
+Проверка доставки сообщений:
+```bash
+~/kafka-demo/schema-registry/bin/kafka-console-consumer \
+  --bootstrap-server rc1b-6v254d3mu3mlhcg5.mdb.yandexcloud.net:9091,rc1b-ga7q4l5c43kes7ms.mdb.yandexcloud.net:9091,rc1b-tl2r3tk8eaau7h4d.mdb.yandexcloud.net:9091 \
+  --consumer.config ~/kafka-demo/tools/java-client.properties \
+  --topic app.events --from-beginning --max-messages 10 | cat
+```
+
+Полезные команды:
+```bash
+docker ps
+docker logs --tail 100 nifi
+ss -ltnp | grep :8082
+```
+
 Конфигурация кластера:
 Версия: 3.5
 Реестр схем данных: есть

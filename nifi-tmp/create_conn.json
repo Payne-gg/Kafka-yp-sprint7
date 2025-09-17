@@ -1,0 +1,1 @@
+{ "revision": {"version": 0}, "component": { "source": {"id": "530a5dd1-0199-1000-0248-6480ee842d3e", "type": "PROCESSOR"}, "destination": {"id": "5312188a-0199-1000-186a-083b23f5eef9", "type": "PROCESSOR"}, "selectedRelationships": ["success"] } }

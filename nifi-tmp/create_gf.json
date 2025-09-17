@@ -1,0 +1,1 @@
+{ "revision": {"version": 0}, "component": {"type": "org.apache.nifi.processors.standard.GenerateFlowFile", "name": "GenerateTestData", "position": {"x": 0.0, "y": 0.0}, "config": {"schedulingPeriod": "1 sec", "properties": {"Custom Text": "Hello from NiFi"}}}}

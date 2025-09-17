@@ -1,0 +1,1 @@
+{ "revision": {"version": 0}, "component": { "type": "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6", "bundle": {"group":"org.apache.nifi","artifact":"nifi-kafka-2-6-nar","version":"1.23.2"}, "name": "PublishToKafka", "position": {"x": 420.0, "y": 0.0} } }

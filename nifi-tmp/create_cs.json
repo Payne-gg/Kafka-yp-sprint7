@@ -1,0 +1,12 @@
+{
+  "revision": {"version": 0},
+  "component": {
+    "type": "org.apache.nifi.ssl.StandardSSLContextService",
+    "name": "KafkaTruststore",
+    "properties": {
+      "Truststore Filename": "/opt/nifi/nifi-current/conf/yandex-truststore.jks",
+      "Truststore Password": "trustpass",
+      "Truststore Type": "JKS"
+    }
+  }
+}
